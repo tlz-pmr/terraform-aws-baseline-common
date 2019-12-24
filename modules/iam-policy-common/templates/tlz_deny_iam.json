@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyIAM",
+        "Action": [
+          "iam:Attach*",
+          "iam:Create*",
+          "iam:Change*",
+          "iam:Delete*",
+          "iam:Detach*",
+          "iam:Enable*",
+          "iam:GetAccount*",
+          "iam:Update*",
+          "iam:*AccessKey*"
+        ],
+        "Effect": "Deny",
+        "Resource": "*"
+      }
+    ]
+  }

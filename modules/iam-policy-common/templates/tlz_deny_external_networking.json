@@ -1,0 +1,44 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyDirectConnect",
+        "Action": "directconnect:*",
+        "Effect": "Deny",
+        "Resource": "*"
+      },
+      {
+        "Sid": "DenyInternetGateway",
+        "Action": [
+          "ec2:AttachInternetGateway",
+          "ec2:DeleteInternetGateway",
+          "ec2:DetachInternetGateway"
+        ],
+        "Effect": "Deny",
+        "Resource": "*"
+      },
+      {
+        "Sid": "DenyNatGateway",
+        "Action": [
+          "ec2:CreateNatGateway",
+          "ec2:DeleteNatGateway"
+        ],
+        "Effect": "Deny",
+        "Resource": "*"
+      },
+      {
+        "Sid": "DenyVGW",
+        "Action": [
+          "ec2:AttachVpnGateway",
+          "ec2:CreateVpnGateway",
+          "ec2:DeleteVpnGateway",
+          "ec2:DeleteVpn*",
+          "ec2:DetachVpnGateway",
+          "ec2:DisableVgwRoutePropagation",
+          "ec2:EnableVgwRoutePropagation"
+        ],
+        "Effect": "Deny",
+        "Resource": "*"
+      }
+    ]
+  }

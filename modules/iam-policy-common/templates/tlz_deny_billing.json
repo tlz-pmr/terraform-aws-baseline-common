@@ -1,0 +1,19 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "",
+            "Effect": "Deny",
+            "Action": "aws-portal:Modify*",
+            "Resource": "*"
+        },
+        {
+            "Sid": "",
+            "Effect": "Allow",
+            "Action": [
+                "aws-portal:View*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

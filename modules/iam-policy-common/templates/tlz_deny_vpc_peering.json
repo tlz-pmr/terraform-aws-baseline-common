@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyVPCPeering",
+        "Action": [
+          "ec2:AcceptVpcPeeringConnection",
+          "ec2:CreateVpcPeeringConnection",
+          "ec2:DeleteVpcPeeringConnection",
+          "ec2:ModifyVpcPeeringConnectionOptions",
+          "ec2:RejectVpcPeeringConnection"
+        ],
+        "Effect": "Deny",
+        "Resource": "*"
+      }
+    ]
+  }
